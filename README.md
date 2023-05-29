@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL:(https://github.com/karam-7//newsletter-signup-with-success-message)
-- Live Site URL:(https://karam-7.github.io//newsletter-signup-with-success-message/)
+- Live Site URL:(https://karam-7.github.io/newsletter-signup-with-success-message/)
 
 ## My process
 
