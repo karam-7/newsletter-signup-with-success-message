@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    line-height: 1rem;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-width: 1340px;     
+    min-height: 100vh;  
+    background-color: hsl(234, 29%, 20%);  
+}
+
+/* ======================== Star Main Area ================ */
+
+#site{
+    padding: 4rem;
+}
+
+/* ======================== Start signup Section Area ================ */
+
+#signup{
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    justify-content: space-between;
+    width: 1000px;
+    border-radius: 20px;
+    margin-left: 15rem;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+}
+
+.label{
+    display: flex;
+    flex-direction: column;
+}
+
+.content-h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    font-family: 'Roboto';
+}
+
+.content-p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+    font-family: 'Roboto';
+    line-height: 1.5rem;
+    width: 450px;
+    padding-bottom: 1rem;
+}
+
+.content-span{
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin-top: 0.5rem;
+    align-items: center;
+}
+
+.info{
+    display: flex;
+    gap: 0.8rem;
+}
+
+.span-img{
+    width: 17px;
+}
+
+.valid{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.email-span{
+    color: hsl(234, 29%, 20%);
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+}
+
+#error{
+    color: hsl(4, 100%, 67%);
+    font-weight: 700;
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    display: none;
+}
+
+#email{
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: hsl(235, 18%, 26%);
+    border: 1px solid hsl(231, 7%, 60%);
+    outline: none;
+}
+
+#email::placeholder{
+    font-family: 'Roboto';
+    font-size: 1.2rem;
+    color: hsl(231, 7%, 60%);
+    font-weight: 400;
+}
+
+#email:focus{
+    border: 1px solid hsl(234, 29%, 20%);
+}
+
+.btn{
+    margin-top: 1rem;
+    padding: 1rem;
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(234, 29%, 20%);
+    border: none;
+}
+
+.btn:hover, .btn:focus{
+    background: linear-gradient(0.30turn, hsla(4, 100%, 67%, 0.61), hsl(4, 100%, 67%));
+}
+
+/* ======================== End signup Section Area ================ */
+/* ======================== Start Thanks Section Area ================ */
+
+#thanks{
+    background-color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    width: 500px;
+    border-radius: 20px;
+    margin-left: 30%;
+    display: none;
+}
+
+.thanks-h2{
+    margin-top: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);
+    font-family: 'Roboto';
+    width: 250px;
+    line-height: 2.8rem;
+}
+
+.thanks-p{
+    margin-top: 2rem;
+    font-size: 1.2rem;
+    color: hsl(235, 18%, 26%);
+    font-weight: 400;
+    width: 400px;
+    line-height: 2rem;
+}
+
+#mail{
+    color: 234, 29%, 20%;
+    font-weight: 700;
+}
+
+#back{
+    width: 90%;
+    text-align: center;
+}
+
+/* ======================== End Thanks Section Area ================ */
+
+
+/* ======================== End Main Area ================ */
+
+/* ======================== START Footer Area ================ */
+
+.foot {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1rem;
+    color: hsl(35, 77%, 62%);
+    justify-content: center;
+    background-color: hsl(240, 10%, 16%);
+    line-height: 1.5rem;
+    padding: 5px;
+}
+  
+.foot a {
+    color: hsl(5, 85%, 63%);
+    text-decoration: none;
+}
+
+.foot a:hover{
+    color: white;
+}
+  
+  
+/* ======================== End Footer Area ================ */
+  
+/* ======================== Start Media Querry Area ================ */
+@media screen and (max-width:1375px){
+    #signup{
+        margin-left: 6rem;
+    }
+}
+
+@media screen and (max-width:375px){
+    body{
+        min-width: 375px;
+    }
+    #site{
+        padding: 0rem;
+    }
+
+    #signup{
+        flex-direction: column;
+        width: 375px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .pic{
+        content: url(./images/illustration-sign-up-mobile.svg);
+    }
+
+    .content{
+        margin: 0;
+        padding: 3rem 2rem;
+    }
+
+    .content-h1{
+        font-size: 3rem;
+    }
+
+    .content-p{
+        width: auto;
+        font-size: 1rem;
+    }
+
+    .content-span{
+        font-size: 1rem;
+    }
+
+    .valid{
+        margin-top: 4rem;
+    }
+
+    #next{
+        margin-top: 3rem;
+    }
+
+    #thanks{
+        width: 375px;
+        margin-left: 0;
+        border-radius: 0 0 20px 20px;
+        padding: 5rem 2rem;
+    }
+
+    .thanks-p{
+        font-size: 1rem;
+        width: auto;
+    }
+
+    #back{
+        margin-top: 5rem;
+        width: 95%;
+    }
+}
+
+/* ======================== End Media Querry Area ================ */
